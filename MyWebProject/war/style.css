@@ -1,0 +1,28 @@
+body {
+	background: url("http://bookmarkcreations.com/mm5/Memorial-Card-Backgrounds/Memorial-Card-Gradient-Background-purple-to-grey.jpg");
+	background-attachment: fixed;
+}
+
+p,a {
+	padding: 1%;
+}
+
+table.main {
+	background-color: #fff;
+	width: 70%;
+	border: 3px solid #7A4377;
+	margin: 10% 15% 10% 15%;
+}
+
+table {
+	width: 100%;
+	text-align: center;
+}
+
+#map-canvas {
+	height: 500px;
+}
+
+input {
+	margin: 2%;
+}

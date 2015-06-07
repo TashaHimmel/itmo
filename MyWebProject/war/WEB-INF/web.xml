@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>SecondFirst</servlet-name>
+		<servlet-class>com.SecondFirstServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SecondFirst</servlet-name>
+		<url-pattern>/SecondFirst</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SecondSecond</servlet-name>
+		<servlet-class>com.SecondSecondServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SecondSecond</servlet-name>
+		<url-pattern>/SecondSecond</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SecondThird</servlet-name>
+		<servlet-class>com.SecondThirdServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SecondThird</servlet-name>
+		<url-pattern>/SecondThird</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SecondFourth</servlet-name>
+		<servlet-class>com.SecondFourthServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SecondFourth</servlet-name>
+		<url-pattern>/SecondFourth</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ThirdFirst</servlet-name>
+		<servlet-class>com.ThirdFirstServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ThirdFirst</servlet-name>
+		<url-pattern>/ThirdFirst</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ThirdSecond</servlet-name>
+		<servlet-class>com.ThirdSecondServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ThirdSecond</servlet-name>
+		<url-pattern>/ThirdSecond</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Fourth</servlet-name>
+		<servlet-class>com.FourthServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Fourth</servlet-name>
+		<url-pattern>/Fourth</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FifthFirst</servlet-name>
+		<servlet-class>com.FifthFirstServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FifthFirst</servlet-name>
+		<url-pattern>/FifthFirst</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FifthSecond</servlet-name>
+		<servlet-class>com.FifthSecondServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FifthSecond</servlet-name>
+		<url-pattern>/FifthSecond</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FifthThird</servlet-name>
+		<servlet-class>com.FifthThirdServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FifthThird</servlet-name>
+		<url-pattern>/FifthThird</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FifthFourth</servlet-name>
+		<servlet-class>com.FifthFourthServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FifthFourth</servlet-name>
+		<url-pattern>/FifthFourth</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>

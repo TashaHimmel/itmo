@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Ближайшее к 10 число</title>
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+<link rel="stylesheet" href="style.css">
+<script src="jquery-2.1.0.min.js"></script>
+<script>
+	$(function() {
+		$('#show').click(
+				function() {
+					var inputNum1 = $('#inputNum1').val();
+					var inputNum2 = $('#inputNum2').val();
+
+					$('#result').load(
+							"/SecondFirst?inputNum1=" + inputNum1
+									+ "&inputNum2=" + inputNum2);
+				});
+	});
+</script>
+</head>
+<body>
+	<table class="main">
+		<tr>
+			<td>
+				<h2>Ближайшее к 10 число</h2>
+				<form>
+					<input id="inputNum1" type="text" /> <input id="inputNum2" type="text" />
+				</form>
+				<button id="show">Готово</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+					<span id="result"></span>
+				</p>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

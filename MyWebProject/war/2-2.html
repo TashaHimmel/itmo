@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Ближайшее к 10 число</title>
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+<link rel="stylesheet" href="style.css">
+<script src="jquery-2.1.0.min.js"></script>
+<script>
+	$(function() {
+		$('#show').click(
+				function() {
+					var inputNum1 = $('#inputNum1').val();
+					var inputNum2 = $('#inputNum2').val();
+					var inputNum3 = $('#inputNum3').val();
+
+					$('#result').load(
+							"/SecondSecond?inputNum1="+inputNum1+"&inputNum2="+inputNum2+"&inputNum3="+inputNum3);
+				});
+	});
+</script>
+</head>
+<body>
+	<table class="main">
+		<tr>
+			<td>
+			<h2>Квадратное уравнение</h2>
+				<form>
+					<p><input id="inputNum1" type="text" placeholder="Введите a" /></p>
+					<p><input id="inputNum2" type="text" placeholder="Введите b" /></p>
+					<p><input id="inputNum3" type="text" placeholder="Введите c" /></p>
+				</form>
+				<button id="show">Готово</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+					<span id="result"></span>
+				</p>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

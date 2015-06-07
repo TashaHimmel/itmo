@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Главная страница</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script
+	src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script>
+	function initialize() {
+		var mapOptions = {
+			zoom : 2,
+			backgroundColor : "#292929",
+			styles : [ {
+				"featureType" : "administrative.country",
+				"elementType" : "geometry",
+				"stylers" : [ {
+					"visibility" : "on"
+				}, {
+					"color" : "#326080"
+				}, {
+					"weight" : 0.68
+				} ]
+			}, {
+				"featureType" : "administrative.country",
+				"elementType" : "labels.text.fill",
+				"stylers" : [ {
+					"color" : "#c9a800"
+				} ]
+			}, {
+				"featureType" : "administrative.country",
+				"elementType" : "labels.text.stroke",
+				"stylers" : [ {
+					"color" : "#326080"
+				} ]
+			}, {
+				"featureType" : "water",
+				"elementType" : "geometry",
+				"stylers" : [ {
+					"color" : "#326080"
+				} ]
+			}, {
+				"featureType" : "administrative",
+				"elementType" : "labels.text.fill",
+				"stylers" : [ {
+					"color" : "#ffffff"
+				} ]
+			}, {
+				"featureType" : "water",
+				"elementType" : "labels.text.fill",
+				"stylers" : [ {
+					"color" : "#ffffff"
+				}, {
+					"hue" : "#000000"
+				} ]
+			} ]
+		};
+		map = new google.maps.Map(document.getElementById('map-canvas'),
+				mapOptions);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+<body>
+	<table class="main">
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td>
+				<div id="map-canvas"></div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
